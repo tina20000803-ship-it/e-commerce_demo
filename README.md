@@ -44,3 +44,9 @@ WITH MonthlyRevenue AS (
 SELECT OrderMonth, CurrentMonthRevenue,
        LAG(CurrentMonthRevenue, 1) OVER (ORDER BY OrderMonth) AS PreviousMonthRevenue
 FROM MonthlyRevenue;
+```
+
+### 系統界面演示 (UI Demo)
+![銷售總覽報表](images/dashboard1.png)
+![月營收成長分析](images/dashboard2.png)
+![客戶留存分析](images/dashboard3.png)
